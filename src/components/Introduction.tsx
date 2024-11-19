@@ -50,7 +50,7 @@ export default function Introduction() {
 
       {/* 이미지 */}
       <motion.img
-        src="/images/1.WEBP"
+        src="/images/1.webp"
         alt="メイン画像"
         className="rounded-lg shadow-lg w-full max-w-4xl"
         initial={{ opacity: 0 }}
