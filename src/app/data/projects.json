@@ -1,12 +1,8 @@
 [
   {
-    "title": "プロジェクトA",
-    "description": "これはプロジェクトAの説明です。最新技術を使用したウェブアプリケーションです。",
-    "image": "/images/IMG_6191.WEBP"
-  },
-  {
-    "title": "プロジェクトB",
-    "description": "これはプロジェクトBの説明です。革新的なモバイルアプリケーションです。",
-    "image": "/images/IMG_6191.WEBP"
+    "title": "mokumokukai",
+    "description": "A website for junior engineers to share their knowledge and experience.",
+    "image": "/images/IMG_6191.WEBP",
+    "url": "https://www.mokumokukai.com/"
   }
 ]

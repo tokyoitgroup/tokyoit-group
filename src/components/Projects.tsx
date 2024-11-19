@@ -2,6 +2,7 @@
 
 import projects from "@/app/data/projects.json";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -19,24 +20,27 @@ export default function Projects() {
       {/* 프로젝트 카드 영역 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
         {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-56 object-cover"
-            />
-            <div className="p-6">
-              <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
-                {project.title}
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-gray-700">
-                {project.description}
-              </p>
-            </div>
-          </motion.div>
+          // 새로운 페이지로
+          <Link key={index} href={`${project.url}`} target="_blank">
+            <motion.div
+              key={index}
+              className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-56 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-sm sm:text-base md:text-lg text-gray-700">
+                  {project.description}
+                </p>
+              </div>
+            </motion.div>
+          </Link>
         ))}
       </div>
     </section>

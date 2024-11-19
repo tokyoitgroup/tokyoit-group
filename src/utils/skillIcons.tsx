@@ -1,10 +1,10 @@
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
+import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
 import {
+  SiJavascript,
   SiNextdotjs,
+  SiPython,
   SiRubyonrails,
   SiTypescript,
-  SiJavascript,
-  SiPython,
 } from "react-icons/si";
 
 interface SkillIconMap {
@@ -18,10 +18,13 @@ export const skillIcons: SkillIconMap = {
   Flutter:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   "Ruby on Rails": <SiRubyonrails className="text-red-500" />,
+  ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
   Kotlin:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
   TypeScript: <SiTypescript className="text-blue-700" />,
   JavaScript: <SiJavascript className="text-yellow-500" />,
   Python: <SiPython className="text-blue-400" />,
   Database: <FaDatabase className="text-yellow-500" />,
+  vuejs:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
 };
