@@ -1,0 +1,23 @@
+[
+  {
+    "name": "パク ドンミン",
+    "position": "モバイルエンジニア",
+    "company": "株式会社000",
+    "skills": [
+      "Flutter",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Kotlin",
+      "Ruby on Rails"
+    ],
+    "hobbies": "写真撮影、旅行",
+    "introduction": "常に挑戦を求め、モバイルアプリ開発を中心に革新的なソリューションを生み出すエンジニアです。最新技術を学び、現場で即戦力となる知識を実践的に活用しています。",
+    "goal": "仲間と共に成長し、未来を変えるサービスを創りたい。技術を通じて世界にポジティブな影響を与えるエンジニアでありたい。",
+    "image": "/images/2.jpeg",
+    "links": {
+      "github": "https://https://github.com/dongmin7208",
+      "linkedin": "https://www.https://www.linkedin.com/in/dongmin-park-47559b1ab/?locale=ja_JP"
+    }
+  }
+]
