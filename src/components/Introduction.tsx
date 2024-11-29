@@ -22,7 +22,7 @@ export default function Introduction() {
         animate={{ opacity: 1 }}
       >
         <p className="text-xl text-gray-700">
-          一人では挫けそうなときも、仲間がいれば乗り越えられる。
+          一人では難しいことも、みんなで協力すれば乗り越えられる。
         </p>
       </motion.div>
 
@@ -33,7 +33,7 @@ export default function Introduction() {
         animate={{ opacity: 1 }}
       >
         <p className="text-xl text-gray-700">
-          私たちは、共に学び合い、成長し続けるエンジニアの集まりです。
+          私たちは、共に学び、技術を磨くエンジニアのグループです。
         </p>
       </motion.div>
 
@@ -44,7 +44,7 @@ export default function Introduction() {
         animate={{ opacity: 1 }}
       >
         <p className="text-lg text-gray-600">
-          新しい技術の探求、自分を磨く努力、そして仲間との絆がここにはあります。
+          新しい知識を得て、一緒に成長していきましょう。
         </p>
       </motion.div>
 

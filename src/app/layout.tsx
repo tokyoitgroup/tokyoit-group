@@ -16,16 +16,16 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Tokyo IT Group",
+  title: "Tokyo IT Group | エンジニアのための勉強会と技術共有",
   description:
-    "東京ITグループの勉強会紹介ページ。エンジニア同士が学び合い、成長するための場です。",
+    "東京ITグループは、エンジニア同士が集まり、学び、成長するためのコミュニティです。最新技術の習得やプロジェクトを通じてスキルを磨きます。",
   openGraph: {
     type: "website",
     locale: "ja_JP",
     url: "https://www.tokyoitgroup.com/",
-    title: "Tokyo IT Group | エンジニアのための成長の場",
+    title: "Tokyo IT Group | エンジニアのための勉強会と技術共有",
     description:
-      "東京ITグループは、エンジニア同士が集まり、学び、成長するためのコミュニティです。最新技術の習得やプロジェクトを通じてスキルを磨きます。",
+      "東京ITグループは、エンジニア同士が集まり、学び、成長するためのコミュニティです。",
     siteName: "Tokyo IT Group",
     images: [
       {
@@ -36,13 +36,20 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    site: "@TokyoITGroup",
-    title: "Tokyo IT Group | エンジニアのための成長の場",
-    description:
-      "エンジニアが集まり、学び、成長するTokyo IT Group。最新技術を学びながら新しい仲間とプロジェクトを進めていきます。",
-    images: ["https://tokyoitgroup.com/images/og-image.jpg"],
+  // twitter: {
+  //   card: "summary_large_image",
+  //   site: "@TokyoITGroup",
+  //   title: "Tokyo IT Group | エンジニアのための勉強会と技術共有",
+  //   description:
+  //     "エンジニアが集まり、学び、成長するTokyo IT Group。最新技術を学びながら新しい仲間とプロジェクトを進めていきます。",
+  //   images: ["https://tokyoitgroup.com/images/og-image.jpg"],
+  // },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: "https://www.tokyoitgroup.com/",
   },
 };
 

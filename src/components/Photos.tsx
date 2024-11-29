@@ -2,17 +2,18 @@ import { motion } from "framer-motion";
 import Masonry from "react-masonry-css";
 
 const photos = [
-  { src: "/images/IMG_6191.WEBP", alt: "勉強会での学習風景" },
-  { src: "/images/IMG_6191.WEBP", alt: "みんなで食事" },
-  { src: "/images/IMG_6191.WEBP", alt: "みんなで食事" },
-  { src: "/images/IMG_6191.WEBP", alt: "みんなで食事" },
-  { src: "/images/profile2.webp", alt: "みんなで食事" },
-  { src: "/images/profile2.webp", alt: "みんなで食事" },
-  { src: "/images/2.jpeg", alt: "みんなで食事" },
-  { src: "/images/profile2.webp", alt: "みんなで食事" },
-  { src: "/images/IMG_6191.WEBP", alt: "みんなで食事" },
-  { src: "/images/IMG_6191.WEBP", alt: "みんなで食事" },
-  // 他の写真を追加
+  { src: "/images/study/1.webp", alt: "" },
+  { src: "/images/study/2.webp", alt: "" },
+  { src: "/images/study/3.webp", alt: "" },
+  { src: "/images/study/4.webp", alt: "" },
+  { src: "/images/study/3.webp", alt: "" },
+  { src: "/images/study/4.webp", alt: "" },
+  { src: "/images/study/2.webp", alt: "" },
+  { src: "/images/study/2.webp", alt: "" },
+  { src: "/images/study/1.webp", alt: "" },
+  { src: "/images/study/3.webp", alt: "" },
+  { src: "/images/study/4.webp", alt: "" },
+  { src: "/images/study/3.webp", alt: "" },
 ];
 
 export default function Photos() {
@@ -28,11 +29,10 @@ export default function Photos() {
       {/* 제목과 설명 */}
       <div className="text-center flex flex-col items-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 bg-customBg py-2 px-4 rounded-lg shadow-lg inline-block">
-          勉強会の様子
+          われわれの活動
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-gray-700 bg-customBg py-2 px-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-4">
-          勉強会の後、希望者で昼食を一緒に楽しむこともあります。学びと交流を写真でご覧ください。
-        </p>
+        {/* <p className="text-base sm:text-lg md:text-xl text-gray-700 bg-customBg py-2 px-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-4">
+        </p> */}
       </div>
 
       {/* 사진 갤러리 */}

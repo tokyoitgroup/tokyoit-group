@@ -6,6 +6,12 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadFull } from "tsparticles";
 
+type ImageOption = {
+  src: string;
+  width?: number;
+  height?: number;
+};
+
 const ParticleBackground = () => {
   const [init, setInit] = useState(false);
 
@@ -19,7 +25,7 @@ const ParticleBackground = () => {
   }, []);
 
   // 공통 아이콘 속성 추가
-  const formattedIcons = useMemo(() => {
+  const formattedIcons: ImageOption[] = useMemo(() => {
     return iconList.map((icon) => ({
       src: icon.src,
       height: 32,
@@ -34,7 +40,8 @@ const ParticleBackground = () => {
       particles: {
         number: {
           density: { enable: true, width: 1920, height: 1080 },
-          value: 10, // 초기 파티클 수
+          // 초기 파티클 수
+          value: 10,
         },
         shape: {
           type: "image",
@@ -66,6 +73,10 @@ const ParticleBackground = () => {
     console.log("Particles loaded:", container);
   };
 
+  if (!init || formattedIcons.length === 0) {
+    return null;
+  }
+
   if (init) {
     return (
       <Particles
@@ -75,8 +86,6 @@ const ParticleBackground = () => {
       />
     );
   }
-
-  return null;
 };
 
 export default ParticleBackground;

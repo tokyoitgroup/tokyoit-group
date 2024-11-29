@@ -1,8 +1,8 @@
-import { FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiJavascript,
+  SiNestjs,
   SiNextdotjs,
-  SiPython,
   SiRubyonrails,
   SiTypescript,
 } from "react-icons/si";
@@ -12,19 +12,57 @@ interface SkillIconMap {
 }
 
 export const skillIcons: SkillIconMap = {
-  React: <FaReact className="text-blue-500" />,
-  "Next.js": <SiNextdotjs className="text-black" />,
-  "Node.js": <FaNodeJs className="text-green-500" />,
+  React: <FaReact style={{ color: "#61DAFB" }} />,
+  "Next.js": <SiNextdotjs style={{ color: "#000000" }} />,
+  "Node.js": <FaNodeJs style={{ color: "#68A063" }} />,
+  aws: <FaAws style={{ color: "#FF9900" }} />,
   Flutter:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-  "Ruby on Rails": <SiRubyonrails className="text-red-500" />,
-  ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+  "Ruby on Rails": <SiRubyonrails style={{ color: "#CC0000" }} />,
   Kotlin:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-  TypeScript: <SiTypescript className="text-blue-700" />,
-  JavaScript: <SiJavascript className="text-yellow-500" />,
-  Python: <SiPython className="text-blue-400" />,
-  Database: <FaDatabase className="text-yellow-500" />,
-  vuejs:
+  TypeScript: <SiTypescript style={{ color: "#3178C6" }} />,
+  JavaScript: <SiJavascript style={{ color: "#F7DF1E" }} />,
+  Python:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  Database: <FaDatabase style={{ color: "#444444" }} />,
+  DB: <FaDatabase style={{ color: "#444444" }} />,
+  NestJS: <SiNestjs style={{ color: "#E0234E" }} />,
+  Angular:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+  Java: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  SpringBoot:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+  "Vue.js":
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+  "Shell Script":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+  Postgres:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
+  "on-premise":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  Figma:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  Adobe: (
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+      alt="Photoshop"
+      style={{
+        width: "36px",
+        height: "36px",
+        borderRadius: "8px",
+        backgroundColor: "#31A8FF",
+        padding: "4px",
+      }}
+    />
+  ),
+  Azure:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+  "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+  unity:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
+  Apex: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
+  Salesforce:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
 };
