@@ -2,6 +2,7 @@
 
 import projects from "@/app/data/projects.json";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Projects() {
@@ -26,10 +27,12 @@ export default function Projects() {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105"
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 className="w-full h-56 object-cover"
+                width={640}
+                height={360}
               />
               <div className="p-6">
                 <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">

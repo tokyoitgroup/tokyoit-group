@@ -1,6 +1,7 @@
 import { skillIcons } from "@/utils/skillIcons";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import {
   FaAws,
@@ -71,17 +72,19 @@ const socialIcons: { [key: string]: JSX.Element } = {
   twitter: <FaTwitter className="text-blue-500" />,
   instagram: <FaInstagram className="text-pink-500" />,
   youtube: <FaYoutube className="text-red-600" />,
-  zenn: <img src="/zenn.png" alt="zenn" height={32} width={24} />,
+  zenn: <Image src="/zenn.png" alt="zenn" height={32} width={24} />,
   FaAws: <FaAws className="text-yellow-600" />,
 };
 
 const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
   return (
     <Card whileHover={{ scale: 1.05 }}>
-      <img
+      <Image
         src={encodeURI(member.image)}
         alt={member.name}
         className="w-full h-56 object-cover"
+        width={640}
+        height={360}
       />
       <div className="p-6">
         <h3 className="text-2xl font-bold text-blue-600 mb-2">{member.name}</h3>
@@ -93,7 +96,12 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
             <SkillIcon key={index}>
               {skillIcons[skill] ? (
                 typeof skillIcons[skill] === "string" ? (
-                  <img src={skillIcons[skill] as string} alt={skill} />
+                  <Image
+                    src={skillIcons[skill] as string}
+                    alt={skill}
+                    width={32}
+                    height={32}
+                  />
                 ) : (
                   skillIcons[skill]
                 )

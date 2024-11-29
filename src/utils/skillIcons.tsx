@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaAws, FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
 import {
   SiJavascript,
@@ -6,7 +7,6 @@ import {
   SiRubyonrails,
   SiTypescript,
 } from "react-icons/si";
-
 interface SkillIconMap {
   [key: string]: JSX.Element | string;
 }
@@ -45,16 +45,16 @@ export const skillIcons: SkillIconMap = {
   Figma:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   Adobe: (
-    <img
+    <Image
       src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
       alt="Photoshop"
       style={{
-        width: "36px",
-        height: "36px",
         borderRadius: "8px",
         backgroundColor: "#31A8FF",
         padding: "4px",
       }}
+      width={36}
+      height={36}
     />
   ),
   Azure:
