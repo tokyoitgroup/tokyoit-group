@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Introduction() {
   return (
@@ -51,13 +52,21 @@ export default function Introduction() {
       </motion.div>
 
       {/* 이미지 */}
-      <motion.img
-        src="/images/1.webp"
-        alt="メイン画像"
-        className="rounded-lg shadow-lg w-full max-w-4xl"
+      <motion.div
+        className="rounded-lg shadow-lg w-full sm:max-w-4xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-      />
+      >
+        <Image
+          src="/images/1.webp"
+          alt="メイン画像"
+          width={800}
+          height={600}
+          className="rounded-lg shadow-lg w-full"
+          loading="lazy"
+          layout="intrinsic"
+        />
+      </motion.div>
     </section>
   );
 }

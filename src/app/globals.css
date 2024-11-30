@@ -22,3 +22,7 @@ body {
 .my-masonry-grid_column > div {
   margin-bottom: 15px;
 }
+
+.optimized-animation {
+  transform: translateZ(0);
+}
