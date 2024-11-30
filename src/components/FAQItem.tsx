@@ -17,7 +17,7 @@ export default function FAQItem({ faq }: { faq: FAQ }) {
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left flex bg-customBg justify-between items-center focus:outline-none"
       >
-        <span className="text-xl text-gray-800">{faq.question}</span>
+        <span className="text-md sm:text-xl text-gray-800">{faq.question}</span>
         <motion.svg
           className="w-6 h-6"
           fill="none"
@@ -39,7 +39,7 @@ export default function FAQItem({ faq }: { faq: FAQ }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.2 }}
-          className="mt-2 text-gray-700"
+          className="mt-2 text-sm text-gray-700"
         >
           {faq.answer}
         </motion.p>

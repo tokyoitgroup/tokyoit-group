@@ -82,12 +82,14 @@ const MemberCard: React.FC<{ member: Member }> = ({ member }) => {
       <Image
         src={encodeURI(member.image)}
         alt={member.name}
-        className="w-full h-56 object-cover"
+        className="w-full sm:h-56 object-cover"
         width={640}
         height={360}
       />
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-blue-600 mb-2">{member.name}</h3>
+        <h3 className="font-serif text-2xl font-bold text-blue-600 mb-2">
+          {member.name}
+        </h3>
         <p className="text-gray-700 mb-2">
           {member.position} {member.company && `@ ${member.company}`}
         </p>

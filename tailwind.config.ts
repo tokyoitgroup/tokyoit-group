@@ -12,6 +12,9 @@ export default {
         foreground: "var(--foreground)",
         customBg: "#f0f8ff",
       },
+      fontFamily: {
+        sans: ["DotGothic16", "sans-serif"],
+      },
     },
   },
   plugins: [],

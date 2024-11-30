@@ -8,38 +8,40 @@ export default function Introduction() {
     >
       {/* 제목 */}
       <motion.div
-        className="bg-customBg px-4 py-2 rounded-lg mb-6"
+        className="bg-customBg px-4 sm:py-2 rounded-lg mb-6"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h2 className="text-5xl font-bold text-blue-600">Tokyo IT Group</h2>
+        <h2 className="sm:text-5xl text-2xl font-bold text-blue-600">
+          Tokyo IT Group
+        </h2>
       </motion.div>
 
       {/* 첫 번째 문장 */}
       <motion.div
-        className="bg-customBg px-4 py-2 rounded-lg mb-4"
+        className="bg-customBg px-4 sm:py-2 rounded-lg mb-2 sm:mb-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <p className="text-xl text-gray-700">
+        <p className="sm:text-xl text-gray-700">
           一人では難しいことも、みんなで協力すれば乗り越えられる。
         </p>
       </motion.div>
 
       {/* 두 번째 문장 */}
       <motion.div
-        className="bg-customBg px-4 py-2 rounded-lg mb-4"
+        className="bg-customBg px-4 sm:py-2 rounded-lg mb-2 sm:mb-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <p className="text-xl text-gray-700">
+        <p className="sm:text-xl text-gray-700">
           私たちは、共に学び、技術を磨くエンジニアのグループです。
         </p>
       </motion.div>
 
       {/* 세 번째 문장 */}
       <motion.div
-        className="bg-customBg px-4 py-2 rounded-lg mb-12"
+        className="bg-customBg px-4 sm:py-2 rounded-lg mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >

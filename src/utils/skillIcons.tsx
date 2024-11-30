@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaAws, FaDatabase, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAws, FaDatabase, FaNodeJs, FaReact, FaServer } from "react-icons/fa";
 import {
   SiJavascript,
   SiNestjs,
@@ -40,8 +40,7 @@ export const skillIcons: SkillIconMap = {
   Postgres:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
-  "on-premise":
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+  "on-premise": <FaServer style={{ color: "#6C757D" }} />,
   Figma:
     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
   Adobe: (

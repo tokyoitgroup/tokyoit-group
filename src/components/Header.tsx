@@ -38,7 +38,7 @@ export default function Header() {
       } transition-transform duration-300`}
     >
       <div className="container mx-auto flex justify-between items-center p-4">
-        <Link to="/" className="text-3xl font-bold text-blue-600">
+        <Link to="/" className="sm:text-3xl font-bold text-blue-600">
           Tokyo IT Group
         </Link>
         <nav>
