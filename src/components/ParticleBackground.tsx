@@ -1,16 +1,11 @@
 "use client";
 
 import iconList from "@/app/data/iconList.json";
+import { ImageOption } from "@/types/types";
 import type { Container, ISourceOptions } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadFull } from "tsparticles";
-
-type ImageOption = {
-  src: string;
-  width?: number;
-  height?: number;
-};
 
 const ParticleBackground = () => {
   const [init, setInit] = useState(false);

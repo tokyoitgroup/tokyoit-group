@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 
-export default function Header() {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -150,4 +150,6 @@ export default function Header() {
       )}
     </motion.header>
   );
-}
+};
+
+export default Header;

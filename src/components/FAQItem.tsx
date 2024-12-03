@@ -1,14 +1,10 @@
 "use client";
 
+import { FAQItemProps } from "@/types/types";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-interface FAQ {
-  question: string;
-  answer: string;
-}
-
-export default function FAQItem({ faq }: { faq: FAQ }) {
+const FAQItem = ({ faq }: FAQItemProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -46,4 +42,5 @@ export default function FAQItem({ faq }: { faq: FAQ }) {
       )}
     </div>
   );
-}
+};
+export default FAQItem;

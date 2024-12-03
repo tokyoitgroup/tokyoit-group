@@ -151,6 +151,19 @@
     }
   },
   {
+    "name": "金 受河",
+    "position": "フロントエンド・バックエンド(マークアップ、API繋ぎ込み、画面設計書作成、バッチ処理、Prismaスキーマ作成、モデル・テーブルを生成、バグ修正など)",
+    "company": "株式会社4COLORS",
+    "skills": ["React", "TypeScript"],
+    "hobbies": "お散歩",
+    "introduction": "このコメントを読んでいるあなたの一日が素敵な一日になりますように",
+    "goal": "開発もずっとやりたいし、プロジェクトマネージメントもして見たいし、やりたい物がものすごく多いです！将来も引き続いて開発の楽しさを忘れずに仕事をやり続きたいです！",
+    "image": "/images/profile/KIMSUHA.mp4",
+    "links": {
+      "github": "https://github.com/gusuhawoo"
+    }
+  },
+  {
     "name": "さや",
     "position": "バックエンド",
     "company": "",
