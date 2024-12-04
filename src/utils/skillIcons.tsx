@@ -1,67 +1,191 @@
 import Image from "next/image";
-import { FaAws, FaDatabase, FaNodeJs, FaReact, FaServer } from "react-icons/fa";
-import {
-  SiJavascript,
-  SiNestjs,
-  SiNextdotjs,
-  SiRubyonrails,
-  SiTypescript,
-} from "react-icons/si";
 interface SkillIconMap {
   [key: string]: JSX.Element | string;
 }
 
-export const skillIcons: SkillIconMap = {
-  React: <FaReact style={{ color: "#61DAFB" }} />,
-  "Next.js": <SiNextdotjs style={{ color: "#000000" }} />,
-  "Node.js": <FaNodeJs style={{ color: "#68A063" }} />,
-  aws: <FaAws style={{ color: "#FF9900" }} />,
-  Flutter:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
-  "Ruby on Rails": <SiRubyonrails style={{ color: "#CC0000" }} />,
-  Kotlin:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-  TypeScript: <SiTypescript style={{ color: "#3178C6" }} />,
-  JavaScript: <SiJavascript style={{ color: "#F7DF1E" }} />,
-  Python:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-  Database: <FaDatabase style={{ color: "#444444" }} />,
-  DB: <FaDatabase style={{ color: "#444444" }} />,
-  NestJS: <SiNestjs style={{ color: "#E0234E" }} />,
-  Angular:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-  Java: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  SpringBoot:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-  "Vue.js":
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-  "Shell Script":
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-  Postgres:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-  ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
-  "on-premise": <FaServer style={{ color: "#6C757D" }} />,
-  Figma:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-  Adobe: (
+const skillIcons: SkillIconMap = {
+  React: (
+    <Image src="/images/icons/react.svg" alt="React" width={36} height={36} />
+  ),
+  "Next.js": (
     <Image
-      src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-      alt="Photoshop"
-      style={{
-        borderRadius: "8px",
-        backgroundColor: "#31A8FF",
-        padding: "4px",
-      }}
+      src="/images/icons/nextjs-original.svg"
+      alt="Next.js"
       width={36}
       height={36}
     />
   ),
-  Azure:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
-  "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-  unity:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg",
-  Apex: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
-  Salesforce:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg",
+  "Node.js": (
+    <Image
+      src="/images/icons/nodejs.svg"
+      alt="Node.js"
+      width={36}
+      height={36}
+    />
+  ),
+  aws: <Image src="/images/icons/aws.svg" alt="AWS" width={36} height={36} />,
+  Flutter: (
+    <Image
+      src="/images/icons/flutter-original.svg"
+      alt="Flutter"
+      width={36}
+      height={36}
+    />
+  ),
+  "Ruby on Rails": (
+    <Image
+      src="/images/icons/ruby-on-rails.svg"
+      alt="Ruby on Rails"
+      width={36}
+      height={36}
+    />
+  ),
+  Kotlin: (
+    <Image
+      src="/images/icons/kotlin-original.svg"
+      alt="Kotlin"
+      width={36}
+      height={36}
+    />
+  ),
+  TypeScript: (
+    <Image
+      src="/images/icons/typescript-original.svg"
+      alt="TypeScript"
+      width={36}
+      height={36}
+    />
+  ),
+  JavaScript: (
+    <Image
+      src="/images/icons/javascript-original.svg"
+      alt="JavaScript"
+      width={36}
+      height={36}
+    />
+  ),
+  Python: (
+    <Image
+      src="/images/icons/python-original.svg"
+      alt="Python"
+      width={36}
+      height={36}
+    />
+  ),
+  Database: (
+    <Image
+      src="/images/icons/database.svg"
+      alt="Database"
+      width={36}
+      height={36}
+    />
+  ),
+  DB: (
+    <Image src="/images/icons/database.svg" alt="DB" width={36} height={36} />
+  ),
+  NestJS: (
+    <Image
+      src="/images/icons/nestjs-original.svg"
+      alt="NestJS"
+      width={36}
+      height={36}
+    />
+  ),
+  Angular: (
+    <Image
+      src="/images/icons/angular.svg"
+      alt="Angular"
+      width={36}
+      height={36}
+    />
+  ),
+  Java: (
+    <Image
+      src="/images/icons/java-original.svg"
+      alt="Java"
+      width={36}
+      height={36}
+    />
+  ),
+  SpringBoot: (
+    <Image
+      src="/images/icons/spring-original.svg"
+      alt="Spring Boot"
+      width={36}
+      height={36}
+    />
+  ),
+  "Vue.js": (
+    <Image
+      src="/images/icons/vuejs-original.svg"
+      alt="Vue.js"
+      width={36}
+      height={36}
+    />
+  ),
+  "Shell Script": (
+    <Image
+      src="/images/icons/shell-script.svg"
+      alt="Shell Script"
+      width={36}
+      height={36}
+    />
+  ),
+  Postgres: (
+    <Image
+      src="/images/icons/postgresql-original.svg"
+      alt="Postgres"
+      width={36}
+      height={36}
+    />
+  ),
+  ruby: (
+    <Image
+      src="/images/icons/ruby-original.svg"
+      alt="Ruby"
+      width={36}
+      height={36}
+    />
+  ),
+  "on-premise": (
+    <Image
+      src="/images/icons/database.svg"
+      alt="On-Premise"
+      width={36}
+      height={36}
+    />
+  ),
+  Figma: (
+    <Image
+      src="/images/icons/figma-original.svg"
+      alt="Figma"
+      width={36}
+      height={36}
+    />
+  ),
+  Adobe: (
+    <Image src="/images/icons/adobe.svg" alt="Adobe" width={36} height={36} />
+  ),
+  Azure: (
+    <Image src="/images/icons/azure.svg" alt="Azure" width={36} height={36} />
+  ),
+  "C#": (
+    <Image src="/images/icons/csharp.svg" alt="C#" width={36} height={36} />
+  ),
+  unity: (
+    <Image src="/images/icons/unity.svg" alt="Unity" width={36} height={36} />
+  ),
+  Apex: (
+    <Image src="/images/icons/apex.png" alt="Apex" width={36} height={36} />
+  ),
+  Salesforce: (
+    <Image
+      src="/images/icons/salesforce.svg"
+      alt="Salesforce"
+      width={36}
+      height={36}
+    />
+  ),
 };
+
+export default skillIcons;

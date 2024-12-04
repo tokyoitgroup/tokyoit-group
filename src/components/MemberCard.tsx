@@ -1,17 +1,9 @@
 import { Member, Photo } from "@/types/types";
-import { skillIcons } from "@/utils/skillIcons";
+import skillIcons from "@/utils/skillIcons";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaAws,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube,
-} from "react-icons/fa";
 
 const Card = styled(motion.div)`
   background-color: #ffffff;
@@ -49,13 +41,45 @@ const SkillIcon = styled.div`
 `;
 
 const socialIcons: { [key: string]: JSX.Element } = {
-  github: <FaGithub className="text-gray-800" />,
-  linkedin: <FaLinkedin className="text-blue-700" />,
-  twitter: <FaTwitter className="text-blue-500" />,
-  instagram: <FaInstagram className="text-pink-500" />,
-  youtube: <FaYoutube className="text-red-600" />,
-  zenn: <Image src="/zenn.png" alt="zenn" height={32} width={24} />,
-  FaAws: <FaAws className="text-yellow-600" />,
+  github: (
+    <Image src="/images/icons/github.svg" alt="GitHub" width={32} height={32} />
+  ),
+  linkedin: (
+    <Image
+      src="/images/icons/linkedin.svg"
+      alt="LinkedIn"
+      width={32}
+      height={32}
+    />
+  ),
+  twitter: (
+    <Image
+      src="/images/icons/twitter-original.svg"
+      alt="Twitter"
+      width={32}
+      height={32}
+    />
+  ),
+  instagram: (
+    <Image
+      src="/images/icons/Instagram-original.svg"
+      alt="Instagram"
+      width={32}
+      height={32}
+    />
+  ),
+  youtube: (
+    <Image
+      src="/images/icons/youtube.svg"
+      alt="YouTube"
+      width={32}
+      height={32}
+    />
+  ),
+  zenn: (
+    <Image src="/images/icons/zenn.png" alt="Zenn" width={32} height={32} />
+  ),
+  FaAws: <Image src="/images/icons/aws.svg" alt="AWS" width={32} height={32} />,
 };
 const VideoProfile = ({ src, alt }: Photo) => (
   <video
