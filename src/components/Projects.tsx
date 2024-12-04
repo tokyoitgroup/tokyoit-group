@@ -6,7 +6,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Projects = () => (
-  <section id="projects" className="py-16 px-4">
+  <section
+    id="projects"
+    className="py-16 px-4"
+    style={{ fontFamily: "Jersey10, sans-serif" }}
+  >
     {/* 제목 영역 */}
     <div className="text-center flex flex-col items-center">
       <h2 className="text-xl sm:text-4xl md:text-5xl font-bold mb-6 text-blue-600 bg-customBg py-2 px-4 rounded-lg shadow-lg inline-block">

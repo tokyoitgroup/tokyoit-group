@@ -4,7 +4,11 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const dotGothic16 = localFont({
+const Jersey10 = localFont({
+  src: "/fonts/Jersey10-Regular.ttf",
+  display: "swap",
+});
+const DotGothic16 = localFont({
   src: "/fonts/DotGothic16-Regular.ttf",
   display: "swap",
 });
@@ -23,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Tokyo IT Group",
     images: [
       {
-        url: "https://www.tokyoitgroup.com/images/og-image.jpg",
+        url: "/images/1.webp",
         width: 1200,
         height: 630,
         alt: "Tokyo IT Group - 成長と学びの場",
@@ -54,7 +58,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${dotGothic16.className} antialiased`}>
+      <body
+        className={`${Jersey10.className} ${DotGothic16.className} antialiased`}
+      >
         <Header />
         {children}
         <Footer />

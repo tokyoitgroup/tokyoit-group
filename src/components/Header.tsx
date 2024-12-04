@@ -33,7 +33,8 @@ const Header = () => {
 
   return (
     <motion.header
-      className={`fixed w-full z-50 top-0 left-0 bg-white shadow-md ${
+      style={{ fontFamily: "Jersey10, sans-serif" }}
+      className={`fixed w-full z-50 top-0 left-0  shadow-md ${
         isVisible ? "translate-y-0" : "-translate-y-full"
       } transition-transform duration-300`}
     >

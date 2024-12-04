@@ -12,7 +12,10 @@ const Introduction = () => (
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
     >
-      <h2 className="sm:text-5xl text-2xl font-bold text-blue-600">
+      <h2
+        className="sm:text-5xl text-2xl font-bold text-blue-600"
+        style={{ fontFamily: "Jersey10, sans-serif" }}
+      >
         Tokyo IT Group
       </h2>
     </motion.div>
