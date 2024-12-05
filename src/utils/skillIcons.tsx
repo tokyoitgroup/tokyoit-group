@@ -199,6 +199,17 @@ const skillIcons: SkillIconMap = {
       height={36}
     />
   ),
+  nuxt: (
+    <Image src="/images/icons/nuxt.svg" alt="Nuxt.js" width={36} height={36} />
+  ),
+  elasticSearch: (
+    <Image
+      src="/images/icons/elasticSearch.svg"
+      alt="Elastic Search"
+      width={36}
+      height={36}
+    />
+  ),
 };
 
 export default skillIcons;

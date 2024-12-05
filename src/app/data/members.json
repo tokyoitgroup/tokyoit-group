@@ -202,5 +202,16 @@
     "links": {
       "linkedin": " https://www.linkedin.com/in/kiheon-kim-aa9a36319/"
     }
+  },
+  {
+    "name": "リム・ドンオ",
+    "position": "バックエンド",
+    "company": "",
+    "skills": ["Kotlin", "SpringBoot", "nuxt", "elasticSearch"],
+    "hobbies": "旅行",
+    "introduction": "メンバーと色んな技術を適用して、新しいものを作っていきたいです。",
+    "goal": "データエンジニアを目指しています。",
+    "image": "/images/profile/リム・ドンオ.webp",
+    "links": {}
   }
 ]
