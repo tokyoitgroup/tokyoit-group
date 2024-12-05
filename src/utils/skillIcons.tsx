@@ -5,7 +5,12 @@ interface SkillIconMap {
 
 const skillIcons: SkillIconMap = {
   React: (
-    <Image src="/images/icons/react.svg" alt="React" width={36} height={36} />
+    <Image
+      src="/images/icons/react-original.svg"
+      alt="React"
+      width={36}
+      height={36}
+    />
   ),
   "Next.js": (
     <Image
@@ -182,6 +187,14 @@ const skillIcons: SkillIconMap = {
     <Image
       src="/images/icons/salesforce.svg"
       alt="Salesforce"
+      width={36}
+      height={36}
+    />
+  ),
+  nodejs: (
+    <Image
+      src="/images/icons/nodejs.svg"
+      alt="Node.js"
       width={36}
       height={36}
     />

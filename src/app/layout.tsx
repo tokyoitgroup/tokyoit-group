@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Tokyo IT Group",
     images: [
       {
-        url: "/images/1.webp",
+        url: "https://i.imgur.com/I8r7eQN.png",
         width: 1200,
         height: 630,
         alt: "Tokyo IT Group - 成長と学びの場",
